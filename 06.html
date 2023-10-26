@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        main {
+            background-color: blue;
+            width: 60vw;
+            margin-left: 20vw;
+            height: 60vh;
+            /* 중심축 중간으로 이동 */
+            /* 이동할 블럭을 부모블럭에 설정하기 */
+            /* section을 이동하고싶으면 main에 flex 설정하기 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main, section, ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section {
+            background-color: aliceblue;
+            width: 80%;
+            height: 80%;
+        }
+
+        ul {
+            border: 1px dotted black;
+            height: 80%;
+            width: 80%;
+        }    
+
+        li {
+            border: 2px solid blue;
+            width: 80%;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        span {
+            background-color: green;
+            color: white;
+
+            /* 블럭이 아닌 인라인 요소일 때  */
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 5px;
+            padding: 5px;
+            width: 30%;
+            height: 40px;
+            font-size: 1.2em;
+        }
+
+        @media (max-width:768px) {
+            main {
+                width: 100vw;
+                margin-left: 0vw;
+            }
+        }
+            
+        
+    </style>
+    <title>css 복습</title>
+</head>
+<body>
+    <main>
+        <section>
+            <ul>
+                <li><span>박스1</span><span>입니다</span></li>
+                <li><span style="background-color: blue;color:aqua;">박스2</span></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
