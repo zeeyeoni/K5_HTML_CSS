@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/container.css">
+    <link rel="stylesheet" type="text/css" href="./styles/07.css">
+    <title>JavaScript</title>
+    <script>
+        
+        //function hello(n) {
+        //alert("이건" + n + "알림창이에오 o.o");
+        //}
+        
+        // 변수 선언 시, const와 let만 사용(let은 변경가능)
+        // const hello = (n) => {} (== 익명함수가 할당된 것, 변경불가능)
+        const hello = (n) => {
+            //alert(n + "번째 알림창이에오 o.o");
+            //document.getElementById('message').innerHTML = "<h2>" + n + "번째 알림창이에오 >.<" + "</h2>";
+            //document.querySelector('#message').innerHTML = "<h2>" + n + "번째 알림창이에오 >.<" + "</h2>";
+            document.querySelector('.classMessage').innerHTML = "<h2>" + n + "번째 알림창이에오 >.<" + "</h2>";
+
+        } 
+    </script>
+</head>
+<body>
+    <header>
+        <h1>JavaScript</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.w3schools.com/html/default.asp">w3s school HTML</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/js/default.asp">w3sschool JS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>  
+        <h1>JavaScript 01</h1>
+        <div id="buttonDiv">
+            <button onclick='hello(1)'>ㅎㅅㅎ1 </button>
+            <button onclick='hello(2)'>ㅎㅅㅎ2 </button>
+        </div>
+        <div id = "message" class="classMessage">
+            
+        </div>
+
+    </main>
+</body>
+</html>
