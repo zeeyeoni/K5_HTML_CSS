@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main, header {
+       /* 옆으로 가게 만들기 */
+    display: flex;
+    align-items: center;
+
+    width: 80vw;   
+    margin-left: 10vw;
+}
+ 
+main {
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+header {
+    height: 10vh;
+
+    padding: 10px;
+    background-color: aliceblue;
+    color:dodgerblue;
+
+    justify-content: space-between;
+
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* ul의 목록 점이 사라짐 */
+    list-style: none;
+}
+
+nav li {
+    margin: 0px 10px;
+    padding: 5px;
+    background-color:aliceblue ;
+}
+
+nav a:hover {
+    background-color: white;
+    color: slateblue;
+}
+
+nav a {
+    text-decoration: none;
+    color:slategray;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 20%;
+    color: dodgerblue;
+    border: 0px;
+    margin: 15px;
+}
+
+button:hover {
+    background-color: lightyellow;
+    cursor: pointer;
+}
